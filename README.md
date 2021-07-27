@@ -17,20 +17,12 @@ Comandos git
 git pull
 #
 
-
-
-
-
-
-
-
-
-
-
-
-
  Reconocimiento de Git + Github 
 
 git config --global user.email "github@email.com" 
+
+
+
 git config --global user.name "usuario-github"
 
+# Probando VsCode
