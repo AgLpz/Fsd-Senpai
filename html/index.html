@@ -4,43 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>dddd</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <title>Tareas</title>
 </head>
 <body>
-    <header>
-        <h1>Laaaaaal</h1>
-    </header>
-<nav>
+   <main>
+
+<form style="background-color: rgb(59, 122, 101);">
 
 
-<ul>
-    <li>Inicio</li>
+<label for="nombre">
+    <span>Ingresa tu nombre</span>
+    <input type="text" name="nombre" id="nombre" >
+</label>
 
-    <li>Drones</li>
+<label for="correo">
+<span>Ingresa tu correo electronico</span>
+<input type="email" name="correo" id="correo" required>
 
-    <li>Cursos</li>
+</label>
 
-    <li>Contacto</li>
+<label for="calendario">
+<input type="datetime-local" value="calendario" required>
 
-</ul>
-</nav>
-´
+</label>
+<select >
+
+    <option value="HTML&CSS">Html y Css</option>
+    <option value="JAVASCRIPT">Javascript</option>
+    <option value="RUBY">Ruby</option>
+    <option value="PYTHON">Python</option>
+
+</select>
+<input list="cursos">
+<datalist id="cursos">
+
+    <option value="Fullstack">Full Stack</option>
+    <option value="Frontend">Frond End</option>
+    <option value="Backend">Back End</option>
+
+</datalist>
+<input type="submit">
+
+</form>
+<br><br>
 
 
-
-<section>
-
-<article>
-    
-</article>
-
- </section> 
-
-        
+   </main> 
 </body>
 </html>
-
-
-
-
