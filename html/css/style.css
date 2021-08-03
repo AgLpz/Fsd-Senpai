@@ -1,7 +1,17 @@
 h1 {
-color: rgb(163, 59, 59);}
+color: rgba(165, 50, 50, 0.712);}
 
 body {
-background-color: bisque;
+    background-color: rgb(114, 128, 128);
+    
+    }
+   
+
+nav {
+color: rgb(80, 3, 7);
+
+}
+form {
+color: rgb(112, 163, 18);
 
 }
