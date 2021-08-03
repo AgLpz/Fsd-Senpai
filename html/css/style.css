@@ -1,8 +1,9 @@
 h1 {
+    size: 500px;
 color: rgba(165, 50, 50, 0.712);}
 
 body {
-    background-color: rgb(114, 128, 128);
+    background-color: rgba(22, 91, 194, 0.767);
     
     }
    
@@ -12,6 +13,7 @@ color: rgb(80, 3, 7);
 
 }
 form {
-color: rgb(112, 163, 18);
+    
+color: rgb(45, 18, 163);
 
 }
