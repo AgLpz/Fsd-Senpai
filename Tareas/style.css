@@ -1,0 +1,24 @@
+.article {
+
+    background-color: #2980B9;
+    color: white;
+    margin: 8px;
+    padding: 10px;
+    font-family: sans-serif;
+    border-radius: 12px;
+    box-shadow: 20px red;
+
+}
+
+.consejo {
+text-align: center;
+}
+
+.fig {
+        padding: 2px 2px;
+        border: 10px;
+        border-style: double;
+        display: block;
+        margin: auto;
+
+}
