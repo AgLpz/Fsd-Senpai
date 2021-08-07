@@ -7,11 +7,7 @@
     border: 5px;
     font-family: sans-serif;
     border-radius: 10px;
-}
-.article {
-
-    box-shadow: 1px 1px 0px green;
-}
+ }
 
 .consejo {
 text-align: center;
@@ -24,4 +20,19 @@ text-align: center;
         display: block;
         margin: auto;
 
+}
+
+.footer {
+   
+    text-decoration: none;
+    text-align: center;
+    font-family: sans-serif;
+    padding: 10px;
+    margin: 10px 10% ;
+        font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #297da7;
+    border-radius: 8px;
+    border: 3px solid #2b3aaa; 
 }
