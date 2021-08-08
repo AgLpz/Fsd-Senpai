@@ -7,10 +7,14 @@
     border: 5px;
     font-family: sans-serif;
     border-radius: 10px;
+    box-shadow: 1px 1px 1px blue;
+
  }
 
 .consejo {
 text-align: center;
+margin: 10px 10% ;
+padding: 40px 50px;
 }
 
 .fig {
@@ -35,4 +39,5 @@ text-align: center;
     background-color: #297da7;
     border-radius: 8px;
     border: 3px solid #2b3aaa; 
+    box-shadow: 1px 1px 1px blue;
 }
