@@ -1,0 +1,166 @@
+:root {
+ 
+    --amarillo: #e9c46a;
+    --naranja: #f4a261;
+    --rojo: #cc274c;
+    --azul: #2e4054;
+    --gris: #98a2a9;
+  
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    html {
+        font-size: 62.5%;
+    }
+    button {
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        border: none;
+        color: white;
+        cursor: pointer;
+        margin: 6px;
+      }
+
+    body {
+        display: grid;
+        grid-template-columns: 2fr 8fr;
+        grid-template-rows: .5fr 6fr .1fr;
+        grid-template-areas: "header header"
+                             "aside main"
+                             "footer footer";
+
+       margin: 7px 17rem;     
+       background: linear-gradient(#e66465, #9198e5);  
+                 
+                             
+    }
+
+    .header {
+        display: grid;
+        align-items: center;
+        text-align: center;
+        color: white;
+background-color: blue;
+grid-area: header;
+padding: 2rem;
+
+    }
+    .aside {
+background-color: cadetblue;
+grid-area: aside;
+padding-top: 3rem;
+padding-left: 3rem;
+font-size: 1.6rem;
+
+    }
+
+    .main {
+background-color: white;
+grid-area: main;
+padding-top: 3rem;
+padding-left: 3rem;
+font-size: 1.6rem;
+
+    }
+
+    .img1 {
+width: 45%;
+height: 45%;
+padding: 0;
+margin-top: 3em;
+
+    }
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(6 1fr);
+    grid-template-areas: "a b c d e f ";
+    align-items: center;
+    text-align: center;
+background-color: wheat;
+grid-area: footer;
+
+
+}
+
+footer>button {
+    background-color: wheat;
+    padding: 1rem;
+    transition-duration: 2s;
+    width: 90%;
+    height: 90%;
+  }
+
+.a{
+    grid-area: a;
+    transition-property: background-color;
+
+}
+.a:hover {
+background-color: var(--amarillo);
+width: 95%;
+height: 95%;}
+
+
+
+
+.b {
+    grid-area: b;
+    transition-property: background-color;
+
+}
+.b:hover {
+    width: 95%;
+    height: 95%;
+    background-color: var(--amarillo);
+}
+.c {
+    grid-area: c;
+    transition-property: background-color;
+
+   
+ }
+ .c:hover {
+    width: 95%;
+    height: 95%;
+    background-color: var(--amarillo);
+}
+.d {
+    grid-area: d;
+    transition-property: background-color;
+
+}
+.d:hover {
+    width: 95%;
+    height: 95%;
+    background-color: var(--amarillo);
+
+}
+.e {
+    grid-area: e;
+    transition-property: background-color;
+
+ 
+}
+.e:hover {
+    width: 95%;
+    height: 95%;
+    background-color: var(--amarillo);
+}
+.f {
+    grid-area: f;
+    width: 95%;
+    height: 95%;
+    transition-property: background-color;
+
+
+}
+.f:hover {
+    width: 95%;
+    height: 95%;
+    background-color: var(--amarillo);
+}
