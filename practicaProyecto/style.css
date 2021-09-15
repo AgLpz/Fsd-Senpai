@@ -1,0 +1,342 @@
+:root {
+    --azul: #264653;
+    --verde: #2a9d8f;
+    --amarillo: #e9c46a;
+    --naranja: #f4a261;
+    --rojo: #cc274c;
+    --azul2: #2e4054;
+    --gris: #98a2a9;
+  
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+body {
+font-family: monospace;
+color: var(--azul);
+
+}
+
+main > h2 {
+text-align: center;
+font-size: 2.0rem;
+color: var(--azul);
+
+}
+
+.textoDescriptivo {
+margin: 30px 60px;
+font-size: 1.6rem;
+}
+.container {
+    display: grid;
+    grid-template-columns: .5fr 1.5fr 1.6fr .7fr;
+    grid-template-rows: .6fr .6fr 10fr 5fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "header header header header"
+      "navbar navbar navbar navbar"
+      "aside main main aside-2"
+      "footer footer footer footer";
+  }
+  .header {
+    grid-area: header;
+    background-color: #273036;
+    display: flex;
+    text-align: center;
+     align-items: center;
+     justify-content: center;
+  }
+  .header h1 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 5.8rem;
+    cursor: pointer;
+    color: white;
+
+
+  }
+
+  .navbar { 
+    display: grid;
+    grid-area: navbar;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+  background-color: #273036;
+/* background-image: linear-gradient(315deg, #537895 0%, #09203f 74%); */
+border-bottom: 2.5px solid var(--rojo);
+ 
+    padding: 5px; 
+}
+
+.navbar li {
+  grid-area: menu;
+    display:inline;
+ margin-left:10px;
+ margin-right:10px;
+ position: relative;
+}
+nav ul li a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: white;
+  padding: 10px 15px;
+  font-family: sans-serif;
+
+}
+.navbar ul li::before {
+  content: " ";
+  height: 2px;
+  width: 0%;
+background-color: var(--rojo);
+  position: absolute;
+  left: 0;
+  bottom: -19px;
+  transition: .4s ease-out;
+}
+.navbar ul li:hover::before {
+  width: 100%;
+
+}
+
+
+
+  .aside {
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-area: aside; 
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    /* background-color: var(--naranja); */
+    padding: 20px;}
+  
+  .main {
+    grid-area: main;
+      padding: 20px;
+     }
+  
+  .aside-2 {
+    display: grid;
+    grid-area: aside-2; 
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    padding: 20px;
+  }
+  
+  .footer {     
+    display: grid;
+    grid-area: footer; 
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    padding: 20px;
+  }
+  
+   
+
+    .aside ol {
+font-family: monospace;
+font-size: 1.6rem;
+
+    }
+
+    .cards {
+         display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+    text-align: center;
+    font-size: 1.6rem;
+            margin-left: -8px;
+            margin-right: -8px;
+
+        }
+        
+        .cards > a{
+            padding-left: 8px;
+            padding-right: 8px;
+            margin: 7.5px;
+        }
+        .cards > a {      
+                   display: flex;
+                   align-items: center;
+                   justify-content: center;
+                   border-color: none;
+                   text-decoration: none;
+                   
+                 }
+         
+
+        .restaurante, .supermercados, .vestimenta, .papelerias, .saludybelleza, .profesionales, .hoteleria, .entretenimiento, .noche, .kiosco, .mascotas, .emergencia, .farmacia, .servicios {
+          display: grid;
+          height: 200px;
+          min-width: 200px;
+          padding: 30px;
+          justify-items: center;
+          gap: 50px;
+          background-size:cover;
+          cursor: pointer;
+          border-radius: 8px;
+          filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+          object-fit: cover;
+                }
+
+
+                 
+
+
+        .restaurante {
+         background-image: url('./img/restauranteImg.jpeg');
+  
+        }
+        .supermercados {
+          background-image: url('./img/tataimg.png');
+         
+        }
+
+        .vestimenta {
+         background-image: url('./img/comprasImg.jpeg');
+        }
+
+        .papelerias {
+         background-image: url('./img/papeleriaImg.jpeg');
+        }
+
+        .saludybelleza {
+          background-image: url('./img/saludybellezaImg.png');
+        }
+        .profesionales {
+          background-image: url('./img/profesionalesImg.jpeg');
+
+        }
+        .hoteleria {
+          background-image: url('./img/hoteleriaImg.jpeg');
+
+        }
+        .entretenimiento {
+          background-image: url('./img/entretenimientoImg.jpeg');
+
+        }
+        .noche {
+          background-image: url('./img/barImg.jpeg');
+
+        }
+
+      .kiosco{
+        background-image: url('./img/kioscos.jpeg');
+
+      }
+      .mascotas {
+        background-image: url('./img/mascotas.jpeg');
+
+      }
+      .emergencia {
+        background-image: url('./img/emergencias.jpeg');
+
+      }
+      .farmacia {
+        background-image: url('./img/farmacias.jpeg');
+
+      }
+
+      .servicios {
+        background-image: url('./img/plomero.jpeg');
+
+      }
+      .cards a:hover{
+        transform: scale(1.05);
+        transition: linear 1s;
+      }
+
+        .cards h3 {
+          color: white;
+        background-color: #273036a4;
+        border-radius: 8px;
+          font-size: 1.8rem;
+          padding: 10px;
+        }
+
+      .footer {
+        background-image: url('./img/wave.svg');
+background-size:cover;
+object-fit: cover;
+/* border-top: solid #273036 10px ; */
+      }
+
+
+    body {
+      /* background: linear-gradient(90deg, rgba(7,65,89,1) 0%, rgba(64,134,163,0.9654236694677871) 49%, rgba(97,212,244,1) 98%); */
+      /* background-image: linear-gradient(315deg, #5b6467 0%, #8b939a 74%); */
+      /* background-image: linear-gradient(132deg, #F4D03F 0%, #16A085 100%); */
+      /* background-color: whitesmoke; */
+      /* background-image: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);     */
+      /* background-color: white; */
+/* background-image: linear-gradient(315deg, #9dc5c3 0%, #5e5c5c 74%);      */
+/* background-image: linear-gradient(315deg, #89d4cf 0%, #6e45e1 74%); */
+/* background-color: #b1ade2;
+background-image: linear-gradient(315deg, #b1ade2 0%, #7ddff8 74%); */
+background-color: #ffffff;
+background-image: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
+
+
+    }
+
+    .banner {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      text-align: center;
+      width: 85rem;
+      height: 35rem;
+      border: solid 1px var(--rojo);
+      border-radius: 8px;
+      margin: 10px 70px;
+      animation: banner 40s infinite linear alternate;
+
+    }
+    .banner {
+      background-size:cover;
+          cursor: pointer;
+          object-fit: cover;
+
+    }
+    @keyframes banner {
+      0%, 20% {
+        background-image: url(./img/barImg.jpeg);
+      }
+      20%, 40% {
+        background-image: url(./img/hoteleriaImg.jpeg);
+      }
+      40%, 60% {
+        background-image: url(./img/mascotas.jpeg);
+      }
+      60%, 80% {
+        background-image: url(./img/emergencias.jpeg);
+      }
+      80%, 100% {
+        background-image: url(./img/profesionalesImg.jpeg);
+      }
+
+    }
+    /* .aside-2 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      border: solid 1px blue;
+      margin: 10px 5px;
+
+
+
+    } */
